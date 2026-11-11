@@ -57,7 +57,6 @@ jobs:
       - name: Bootstrap Environment
         run: |
           echo "[INIT] Setting up environment on Worker-${{ matrix.node_code }}..."
-          sudo apt-get update -qq
           sudo apt-get install -y curl python3-pip
 
       # Step 2: Fetch Remote Script
